@@ -8,20 +8,32 @@ import { Link } from "react-router-dom";
 //   background-size: 100%;
 // `
 
+const StyledGrid = styled(Grid)`
+ &&&{ 
+   padding-top: 150px;
+ }
+`
+
 const StyledCard = styled(Card)`
   &&& {
     /* width: 600px;
     display: flex; */
+    margin: auto; 
+    justify-content: center;
+    
   }
 `;
 
 const StyledImage = styled(Image)`
-  width: 200px;
+  width: 300px;
+  height: 240px;
 `;
+
+
 
 const LandingPage = () => (
   // <StyledPage>
-  <Grid>
+  <StyledGrid>
     <Grid.Row columns={3}>
       <Grid.Column>
         <StyledCard>
@@ -40,9 +52,9 @@ const LandingPage = () => (
       <StyledCard>
           <StyledImage src="https://i.imgur.com/YFSvdgl.jpg" />
           <Card.Content>
-            <Card.Header>Russell Westbrook</Card.Header>
-            <Card.Meta>Drafted in 2008</Card.Meta>
-            <Card.Description>"TRIPLE-DOUBLE KING"</Card.Description>
+            <Card.Header>James Harden</Card.Header>
+            <Card.Meta>Drafted in 2009</Card.Meta>
+            <Card.Description>"THE BEARD"</Card.Description>
           </Card.Content>
           <Card.Content extra>
             <a>Current Season Stats</a>
@@ -53,9 +65,9 @@ const LandingPage = () => (
       <StyledCard>
           <StyledImage src="https://i.imgur.com/WP9N9Ct.jpg" />
           <Card.Content>
-            <Card.Header>Russell Westbrook</Card.Header>
-            <Card.Meta>Drafted in 2008</Card.Meta>
-            <Card.Description>"TRIPLE-DOUBLE KING"</Card.Description>
+            <Card.Header>Kevin Durant</Card.Header>
+            <Card.Meta>Drafted in 2007</Card.Meta>
+            <Card.Description>"A UNICORN"</Card.Description>
           </Card.Content>
           <Card.Content extra>
             <a>Current Season Stats</a>
@@ -63,7 +75,7 @@ const LandingPage = () => (
         </StyledCard>
       </Grid.Column>
     </Grid.Row>
-  </Grid>
+  </StyledGrid>
 
   //</StyledPage>
 );
