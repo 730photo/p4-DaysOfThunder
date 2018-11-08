@@ -30,6 +30,12 @@ const StyledImage = styled(Image)`
 `;
 
 
+//call Rails API to get players (/api/players)
+//map through players
+  //create Card for each player
+
+// render result of map function
+
 
 const LandingPage = () => (
   // <StyledPage>
@@ -39,7 +45,7 @@ const LandingPage = () => (
         <StyledCard>
           <StyledImage src="https://i.imgur.com/QdF9klJ.jpg" />
           <Card.Content>
-            <Card.Header>Russell Westbrook</Card.Header>
+            <Link to='/player'><Card.Header>Russell Westbrook</Card.Header></Link>
             <Card.Meta>Drafted in 2008</Card.Meta>
             <Card.Description>"TRIPLE-DOUBLE KING"</Card.Description>
           </Card.Content>
