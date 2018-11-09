@@ -11,13 +11,13 @@ const Page = styled.div`
 `
 
 const PlayerPicture = styled.img`
-    width: 60%;
+    width: 70%;
     padding-top: 60px;
-    padding-left: 40%;
+    padding-left: 30%;
     position: center;
 `
 const Caption = styled.div`
-    color: white;
+    color: black;
     font-size: 50px;
     left: 0;
     position:absolute;
@@ -34,7 +34,7 @@ const PlayerName = styled.div`
     width: 100vw;
     display: block;
     justify-content: center;
-    align-items: baseline;
+    /* align-items: baseline; */
     background: black;
 `
 const PostContainer = styled.div`

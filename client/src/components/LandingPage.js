@@ -21,12 +21,13 @@ const StyledCard = styled(Card)`
     display: flex; */
     margin: auto; 
     justify-content: center;
+    width: 320px;
     
   }
 `;
 
 const StyledImage = styled(Image)`
-  width: 300px;
+  width: 320px;
   height: 240px;
 `;
 
