@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
 
 def index
-    @player = Player.find(params[player_id])
+    @player = Player.find(params[:player_id])
     @posts = @player.posts
     render json: @posts 
 end

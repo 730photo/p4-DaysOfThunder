@@ -9,8 +9,8 @@ Player.destroy_all
 User.destroy_all
 Post.destroy_all 
 
-user = User.creat(name: "Reg", favorite_player: "Russell Westbrook")
+user = User.create(name: "Reg", player: "Russell Westbrook")
 player = Player.create(name: "Russell Westbrook", img: "https://i.imgur.com/QdF9klJ.jpg")
 player2 = Player.create(name: "Kevin Durant", img: "https://i.imgur.com/WP9N9Ct.jpg")
 player3 = Player.create(name: "James Harden", img: "https://i.imgur.com/YFSvdgl.jpg")
-post = Post.create(body: "He is the triple-doble KING", player_id: 1)
+post = Post.create(body: "He is the triple-doble KING", player: player)
