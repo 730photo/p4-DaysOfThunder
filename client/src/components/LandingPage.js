@@ -95,7 +95,7 @@ export default class LandingPage extends Component {
     return (
       <div>
         {LandingPage}
-        <Image src="https://i.imgur.com/RNxrJiH.jpg"></Image>  
+        <Image fluid src="https://i.imgur.com/RNxrJiH.jpg"></Image>  
       
       </div>
     )
