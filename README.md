@@ -30,6 +30,7 @@ When the user clicks the ‘Delete’ button a modal box will appear saying, “
 
 ## Future Development:
 <ul>
+<li>mobile friendly</li>
 <li>External API</li>
 <li>'Current Season Stats' link pulls up stats when you click on it</li>
 <li>Highlight videos on player page</li>

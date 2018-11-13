@@ -4,10 +4,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import axios from 'axios'
 
-// const StyledPage = styled.div`
-//   background: red;
-//   background-size: 100%;
-// `
 
 
 
@@ -107,7 +103,7 @@ export default class LandingPage extends Component {
     return (
       <div>
         {LandingPage}
-        
+        <Image src="https://i.imgur.com/RNxrJiH.jpg"></Image>
       
       </div>
     )
