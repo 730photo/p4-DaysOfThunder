@@ -12,10 +12,10 @@ export default class Login extends Component {
     }
   }
 
-  // the users are displayed 
-  // componentDidMount = async () => {
-  //   const response = await axios.get('/api/users')
-  //   this.setState({ users: response.data })
+  //the users are displayed 
+  componentDidMount = async () => {
+    const response = await axios.get('/api/users')
+    this.setState({ users: response.data })
   }
 
 // handles the change function
@@ -47,7 +47,7 @@ export default class Login extends Component {
       )
     })
 
-    // style the Login page
+    
     // what you need to have when you come to the Login page
     // has the Create New User button
     return (

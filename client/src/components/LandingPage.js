@@ -9,7 +9,8 @@ import axios from 'axios'
 
 const StyledGrid = styled(Grid)`
  &&&{ 
-   padding-top: 150px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    background-color: black;
  }
 `
@@ -22,6 +23,7 @@ const StyledCard = styled(Card)`
     justify-content: center;
     width: 320px;
     
+    
   }
 `;
 
@@ -31,15 +33,7 @@ const StyledImage = styled(Image)`
 `;
 
 
-//call Rails API to get players (/api/players)
-//map through players
-//create Card for each player
 
-// render result of map function
-
-//make a function 
-//within the function make an axios call(get request)
-//still within the function, set that state
 
 export default class LandingPage extends Component {
   state = {
@@ -75,8 +69,6 @@ export default class LandingPage extends Component {
               <StyledImage src={player.img} />
               <Card.Content>
                 <Link to={`/players/${player.id}`}><Card.Header>{player.name}</Card.Header></Link>
-                {/* <Card.Meta>Drafted in 2008</Card.Meta> */}
-                {/* <Card.Description>"TRIPLE-DOUBLE KING"</Card.Description> */}
               </Card.Content>
               <Card.Content extra>
                 <a>Current Season Stats</a>
@@ -103,7 +95,7 @@ export default class LandingPage extends Component {
     return (
       <div>
         {LandingPage}
-        <Image src="https://i.imgur.com/RNxrJiH.jpg"></Image>
+        <Image src="https://i.imgur.com/RNxrJiH.jpg"></Image>  
       
       </div>
     )
