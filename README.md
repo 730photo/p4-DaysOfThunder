@@ -42,3 +42,7 @@ When the user clicks the ‘Delete’ button a modal box will appear saying, “
 
 
 Deployed App (https://days-of-thunder.herokuapp.com/) 
+
+Trello (https://trello.com/b/Z3S4JJVr/days-of-thunder)
+
+ERD (https://realtimeboard.com/app/board/o9J_kyo3eEI=/)

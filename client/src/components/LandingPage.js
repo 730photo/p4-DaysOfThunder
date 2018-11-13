@@ -9,6 +9,8 @@ import axios from 'axios'
 //   background-size: 100%;
 // `
 
+
+
 const StyledGrid = styled(Grid)`
  &&&{ 
    padding-top: 150px;
@@ -71,6 +73,7 @@ export default class LandingPage extends Component {
   render() {
     const playersList = this.state.players.map((player, i) => {
       return (
+        
           <Grid.Column>
             <StyledCard>
               <StyledImage src={player.img} />
@@ -84,6 +87,7 @@ export default class LandingPage extends Component {
               </Card.Content>
             </StyledCard>
             </Grid.Column>
+        
 
             
           
@@ -91,7 +95,7 @@ export default class LandingPage extends Component {
 
     })
     const LandingPage =
-      // <StyledPage>
+      
       <StyledGrid>
         <Grid.Row columns={this.state.players.length}>
         {playersList}
@@ -99,10 +103,12 @@ export default class LandingPage extends Component {
         </Grid.Row>
       </StyledGrid>
 
-      //</StyledPage>
+      
     return (
       <div>
         {LandingPage}
+        
+      
       </div>
     )
   }
