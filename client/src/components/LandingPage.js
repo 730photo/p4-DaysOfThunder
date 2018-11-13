@@ -12,6 +12,7 @@ import axios from 'axios'
 const StyledGrid = styled(Grid)`
  &&&{ 
    padding-top: 150px;
+   background-color: black;
  }
 `
 
@@ -83,6 +84,8 @@ export default class LandingPage extends Component {
               </Card.Content>
             </StyledCard>
             </Grid.Column>
+
+            
           
       )
 
