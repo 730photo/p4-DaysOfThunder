@@ -1,7 +1,8 @@
 // importing React, axios, and SharedComponents for style
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import LandingPage from './LandingPage';
 
 export default class Login extends Component {
   state = {
@@ -12,9 +13,9 @@ export default class Login extends Component {
   }
 
   // the users are displayed 
-  componentDidMount = async () => {
-    const response = await axios.get('/api/users')
-    this.setState({ users: response.data })
+  // componentDidMount = async () => {
+  //   const response = await axios.get('/api/users')
+  //   this.setState({ users: response.data })
   }
 
 // handles the change function
@@ -39,7 +40,7 @@ export default class Login extends Component {
     const usersList = this.state.users.map((user, i) => {
       return (
         <div>
-          <Link to={`/users/${user._id}`} key={i}>
+          <Link to={`/LandingPage/${LandingPage}`} key={i}>
             Name: {user.userName}
           </Link>
         </div>
