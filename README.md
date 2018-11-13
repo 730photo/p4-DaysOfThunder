@@ -41,4 +41,4 @@ When the user clicks the ‘Delete’ button a modal box will appear saying, “
 
 
 
-Deployed App () 
+Deployed App (https://days-of-thunder.herokuapp.com/) 
