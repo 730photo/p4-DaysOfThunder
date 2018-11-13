@@ -21,6 +21,7 @@ When the user clicks the ‘Delete’ button a modal box will appear saying, “
 <li>CSS3</li>
 <li>JavaScript</li>
 <li>Ruby on Rails</li>
+<li>Heroku</li>
 <li>React.js</li>
 <li>PostgresQl</li>
 <li>Semantic UI</li>
